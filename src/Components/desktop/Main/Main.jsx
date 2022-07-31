@@ -57,10 +57,10 @@ export const Main = () => {
           alignItems='center'
           role='img'
         >
-          <Image src={databiz} alt='Logo the Databiz'></Image>
-          <Image src={audiophile} alt='Logo the Audiophile'></Image>
-          <Image src={meet} alt='Logo the Meet'></Image>
-          <Image src={maker} alt='Logo the Maker'></Image>
+          <Image src={databiz} alt='Logo the Databiz' />
+          <Image src={audiophile} alt='Logo the Audiophile' />
+          <Image src={meet} alt='Logo the Meet' />
+          <Image src={maker} alt='Logo the Maker' />
         </Box>
       </Box>
       <Image maxWidth='450px' src={imageHeroDesktop} alt='Man whit laptop' />

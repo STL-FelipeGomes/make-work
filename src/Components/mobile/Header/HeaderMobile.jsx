@@ -53,13 +53,13 @@ export const HeaderMobile = () => {
         _hover={{ background: 'transparent' }}
         onClick={onOpen}
       >
-        <Image src={iconMenu} alt='Icon the burguer'></Image>
+        <Image src={iconMenu} alt='Icon the burguer' />
       </Button>
       <Drawer isOpen={isOpen} placement='right' onClose={onClose}>
         <DrawerOverlay />
         <DrawerContent>
           <DrawerCloseButton marginTop='2rem' right='2.9rem'>
-            <Image src={iconCloseMenu}></Image>
+            <Image src={iconCloseMenu} />
           </DrawerCloseButton>
           <DrawerBody
             fontWeight='700'
