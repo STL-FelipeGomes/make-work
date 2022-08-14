@@ -1,70 +1,46 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<header>
+    <h1>Make Remote Work</h1>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;A web challenge found at <a href="https://www.frontendmentor.io/challenges"><strong>Front-End Mentor</strong></a>, which has challenges from basic to advancing with web technologies.
+    </P>
+  </header>
+  <br>
+  <br>
+  <main>
+    <h2>
+      The challenge
+    </h2>
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;The challenge is to create a intro section with dropdown navigation.<br>   
+    </p>
+    <p>                                          
+      &nbsp;&nbsp;&nbsp;&nbsp;➜ Challenge link: <a href="https://www.frontendmentor.io/challenges/intro-section-with-dropdown-navigation-ryaPetHE5"><strong>Intro section with dropdown navigation</strong></a>
+    </p>
+    <img src="https://user-images.githubusercontent.com/83621438/184554349-235d29fb-eea3-4164-b741-3d7a4370b828.PNG" style="width: 70%;" alt="Website the desktop">
+    <img src="https://user-images.githubusercontent.com/83621438/184554347-9147f0a5-a6bb-452b-a829-959a35c5ce2f.PNG" style="width: 30%;" alt="website the Mobile">
+    <p>
+      &nbsp;&nbsp;&nbsp;&nbsp;➜ Result: <a href="https://stl-make-work.netlify.app/"><strong>My Make Remote Work</strong></a>
+    </p>
+  </main>
+  <br>
+  <br>
+  <footer>
+      <h2>Main technologies</h2>
+    <p>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>REACT</li>
+        <li>Chakra UI</li>
+      </ul>
+    </p>
+  <br>
+  <br>
+    <p>
+      OBS: At this time of publication, I'm new to the web development area, so my codes have syntactic and logical errors, any constructive criticism is welcome.
+    </p>
+    <p>
+      <i>"Work around we accept, what we don't accept is defeat"<i> - My clan
+    <p>
+  <footer>
+  
