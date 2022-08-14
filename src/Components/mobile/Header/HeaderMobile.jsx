@@ -2,10 +2,6 @@ import {
   Box,
   Image,
   Button,
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
   useDisclosure,
   Drawer,
   DrawerOverlay,
@@ -20,8 +16,6 @@ import {
   AccordionPanel,
   Text,
 } from '@chakra-ui/react'
-
-import { ChevronDownIcon, ChevronUpIcon } from '@chakra-ui/icons'
 
 import snap from '../../../images/logo.svg'
 import iconTodoList from '../../../images/icon-todo.svg'
