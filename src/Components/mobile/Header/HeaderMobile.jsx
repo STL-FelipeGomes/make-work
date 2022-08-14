@@ -13,6 +13,12 @@ import {
   DrawerCloseButton,
   DrawerBody,
   DrawerFooter,
+  Accordion,
+  AccordionItem,
+  AccordionButton,
+  AccordionIcon,
+  AccordionPanel,
+  Text,
 } from '@chakra-ui/react'
 
 import { ChevronDownIcon, ChevronUpIcon } from '@chakra-ui/icons'
@@ -26,16 +32,6 @@ import iconMenu from '../../../images/icon-menu.svg'
 import iconCloseMenu from '../../../images/icon-close-menu.svg'
 
 export const HeaderMobile = () => {
-  const {
-    isOpen: isOpenFeatures,
-    onOpen: onOpenFeatures,
-    onClose: onCloseFeatures,
-  } = useDisclosure()
-  const {
-    isOpen: isOpenCompany,
-    onOpen: onOpenCompany,
-    onClose: onBoloCompany,
-  } = useDisclosure()
   const { isOpen, onOpen, onClose } = useDisclosure()
 
   return (
@@ -65,96 +61,137 @@ export const HeaderMobile = () => {
             fontWeight='700'
             color='hsl(0, 0%, 41%)'
             marginTop='6rem'
-            maxHeight='200px'
           >
             <Box marginBottom='1rem'>
-              <Menu onClose={onCloseFeatures} isOpen={isOpenFeatures}>
-                <MenuButton
-                  onClick={onOpenFeatures}
-                  _hover={{
-                    background: 'transparent',
-                    color: 'hsl(0, 0%, 8%)',
-                  }}
-                  _active={{
-                    background: 'transparent',
-                    color: 'hsl(0, 0%, 8%)',
-                  }}
-                  fontWeight='700'
-                  fontSize='1.2rem'
-                  bg='transparent'
-                  p='0'
-                  as={Button}
-                  rightIcon={
-                    !isOpenFeatures ? <ChevronDownIcon /> : <ChevronUpIcon />
-                  }
-                >
-                  Features
-                </MenuButton>
-                <MenuList zIndex='2' minWidth='10rem'>
-                  <MenuItem justifyContent='center'>
-                    <Image
-                      mr='5px'
-                      src={iconTodoList}
-                      alt='Icon the todo list'
-                    />
-                    Todo List
-                  </MenuItem>
-                  <MenuItem justifyContent='center'>
-                    <Image
-                      mr='5px'
-                      src={iconCalendar}
-                      alt='Icon the calendar'
-                    />
-                    Calendar
-                  </MenuItem>
-                  <MenuItem justifyContent='center'>
-                    <Image
-                      mr='5px'
-                      src={iconReminders}
-                      alt='Icon the reminders'
-                    />
-                    Reminders
-                  </MenuItem>
-                  <MenuItem justifyContent='center'>
-                    <Image
-                      mr='5px'
-                      src={iconPlanning}
-                      alt='Icon the planning'
-                    />
-                    Planning
-                  </MenuItem>
-                </MenuList>
-              </Menu>
-            </Box>
-            <Box marginBottom='1rem'>
-              <Menu onClose={onBoloCompany} isOpen={isOpenCompany}>
-                <MenuButton
-                  onClick={onOpenCompany}
-                  _hover={{
-                    background: 'transparent',
-                    color: 'hsl(0, 0%, 8%)',
-                  }}
-                  _active={{
-                    background: 'transparent',
-                    color: 'hsl(0, 0%, 8%)',
-                  }}
-                  fontSize='1.2rem'
-                  fontWeight='700'
-                  bg='transparent'
-                  p='0'
-                  as={Button}
-                  rightIcon={
-                    !isOpenCompany ? <ChevronDownIcon /> : <ChevronUpIcon />
-                  }
-                >
-                  Company
-                </MenuButton>
-                <MenuList>
-                  <MenuItem justifyContent='center'>History</MenuItem>
-                  <MenuItem justifyContent='center'>Our Team</MenuItem>
-                  <MenuItem justifyContent='center'>Blog</MenuItem>
-                </MenuList>
-              </Menu>
+              <Accordion allowToggle border='transparent'>
+                <AccordionItem marginBottom='1rem'>
+                  <h2>
+                    <AccordionButton
+                      width='35%'
+                      padding='0'
+                      _hover={{ background: 'none', color: 'hsl(0, 0%, 8%)' }}
+                    >
+                      <Box
+                        flex='1'
+                        textAlign='left'
+                        fontSize='1.2rem'
+                        fontWeight='700'
+                        bg='transparent'
+                      >
+                        <Text>Feature</Text>
+                      </Box>
+                      <AccordionIcon />
+                    </AccordionButton>
+                  </h2>
+                  <AccordionPanel pb={4} fontWeight='400'>
+                    <Box
+                      as='a'
+                      href=''
+                      display='flex'
+                      alignItems='center'
+                      marginBottom='0.8rem'
+                    >
+                      <Image
+                        mr='5px'
+                        src={iconTodoList}
+                        alt='Icon the todo list'
+                      />
+                      <Text>Todo List</Text>
+                    </Box>
+
+                    <Box
+                      as='a'
+                      href=''
+                      display='flex'
+                      alignItems='center'
+                      marginBottom='0.8rem'
+                    >
+                      <Image
+                        mr='5px'
+                        src={iconCalendar}
+                        alt='Icon the calendar'
+                      />
+                      <Text>Calendar</Text>
+                    </Box>
+
+                    <Box
+                      as='a'
+                      href=''
+                      display='flex'
+                      alignItems='center'
+                      marginBottom='0.8rem'
+                    >
+                      <Image
+                        mr='5px'
+                        src={iconReminders}
+                        alt='Icon the reminders'
+                      />
+                      <Text>Reminders</Text>
+                    </Box>
+
+                    <Box as='a' href='' display='flex' alignItems='center'>
+                      <Image
+                        mr='5px'
+                        src={iconPlanning}
+                        alt='Icon the planning'
+                      />
+                      <Text>Planning</Text>
+                    </Box>
+                  </AccordionPanel>
+                </AccordionItem>
+
+                <AccordionItem>
+                  <h2>
+                    <AccordionButton
+                      width='35%'
+                      padding='0'
+                      _hover={{ background: 'none', color: 'hsl(0, 0%, 8%)' }}
+                    >
+                      <Box
+                        flex='1'
+                        textAlign='left'
+                        fontSize='1.2rem'
+                        fontWeight='700'
+                        bg='transparent'
+                      >
+                        <Text>Company</Text>
+                      </Box>
+                      <AccordionIcon />
+                    </AccordionButton>
+                  </h2>
+                  <AccordionPanel pb={4} fontWeight='400'>
+                    <Box
+                      as='a'
+                      href=''
+                      display='flex'
+                      alignItems='center'
+                      marginBottom='0.8rem'
+                    >
+                      <Text>History</Text>
+                    </Box>
+
+                    <Box
+                      as='a'
+                      href=''
+                      display='flex'
+                      alignItems='center'
+                      marginBottom='0.8rem'
+                    >
+                      <Text>Our Team</Text>
+                    </Box>
+
+                    <Box
+                      as='a'
+                      href=''
+                      display='flex'
+                      alignItems='center'
+                      marginBottom='0.8rem'
+                    >
+                      <Text>Blog</Text>
+                    </Box>
+                  </AccordionPanel>
+                </AccordionItem>
+              </Accordion>
             </Box>
             <Box marginBottom='1rem'>
               <Button
@@ -197,13 +234,13 @@ export const HeaderMobile = () => {
               </Button>
             </Box>
           </DrawerBody>
-
           <DrawerFooter justifyContent='center'>
             <Box
               display='flex'
               flexDirection='column'
               alignItems='center'
               gap='2rem'
+              marginBottom='2rem'
             >
               <Button
                 as='a'
